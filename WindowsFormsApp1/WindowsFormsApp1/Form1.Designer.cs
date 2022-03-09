@@ -31,8 +31,9 @@ namespace WindowsFormsApp1
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtmatkhau = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnlogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,28 +52,38 @@ namespace WindowsFormsApp1
             this.txtUserName.Size = new System.Drawing.Size(100, 20);
             this.txtUserName.TabIndex = 1;
             // 
-            // txtmatkhau
+            // txtpassword
             // 
-            this.txtmatkhau.Location = new System.Drawing.Point(373, 45);
-            this.txtmatkhau.Name = "txtmatkhau";
-            this.txtmatkhau.Size = new System.Drawing.Size(100, 20);
-            this.txtmatkhau.TabIndex = 3;
+            this.txtpassword.Location = new System.Drawing.Point(373, 45);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(100, 20);
+            this.txtpassword.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(310, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Mật khẩu";
+            this.label2.Text = "Password";
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.Location = new System.Drawing.Point(373, 83);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(75, 23);
+            this.btnlogin.TabIndex = 4;
+            this.btnlogin.Text = "Login";
+            this.btnlogin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 173);
-            this.Controls.Add(this.txtmatkhau);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
@@ -87,8 +98,9 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtmatkhau;
+        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnlogin;
     }
 }
 
